@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const LeftSiderbar = () => {
   return (
-    <div>LeftSiderbar</div>
-  )
-}
+    <nav className="leftsidebar">
+      <div className="flex flex-col gap-11">
+        <Link to="/" className="flex gap-3 items-center">
+          <h1 className="text-2xl font-bold">StockX</h1>
+        </Link>
 
-export default LeftSiderbar
+        <Link to={`/profile`}>
+        </Link>
+      </div>
+    </nav>
+  );
+};
+
+export default LeftSiderbar;

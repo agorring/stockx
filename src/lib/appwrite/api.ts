@@ -254,6 +254,7 @@ export async function getPostById(postId: string) {
             appwriteConfig.postCollectionId,
             postId
         )
+        return post
     } catch (error) {
         console.log(error)
     }
